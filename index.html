@@ -585,38 +585,38 @@
 
     </div>
     <script>
-      // function loadHTMLContent(url, elementId) {
-      //   fetch(url)
-      //     .then((response) => response.text())
-      //     .then((data) => {
-      //       document.getElementById(elementId).innerHTML = data;
-      //     })
-      //     .catch((error) =>
-      //       console.error("Error loading HTML content:", error)
-      //     );
-      // }
+      function loadHTMLContent(url, elementId) {
+        fetch(url)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) =>
+            console.error("Error loading HTML content:", error)
+          );
+      }
 
      
 
-      // loadHTMLContent(" https://<asapial>.github.io/<WebJa>//CSS/LearningTopics/1. align-content.html", "content2");
+      loadHTMLContent(" https://asapial.github.io/WebJa/CSS/LearningTopics/1. align-content.html", "content2");
 
-        function loadHTMLContent(url, elementId) {
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.text();
-    })
-    .then((data) => {
-      document.getElementById(elementId).innerHTML = data;
-    })
-    .catch((error) =>
-      console.error("Error loading HTML content:", error)
-    );
-}
+//         function loadHTMLContent(url, elementId) {
+//   fetch(url)
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error(`HTTP error! status: ${response.status}`);
+//       }
+//       return response.text();
+//     })
+//     .then((data) => {
+//       document.getElementById(elementId).innerHTML = data;
+//     })
+//     .catch((error) =>
+//       console.error("Error loading HTML content:", error)
+//     );
+// }
 
-loadHTMLContent("/CSS/LearningTopics/1. align-content.html", "content2");
+// loadHTMLContent("/CSS/LearningTopics/1. align-content.html", "content2");
 
 
     </script>
